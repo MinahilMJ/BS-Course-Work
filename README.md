@@ -1,4 +1,4 @@
-# BS Coursework Data Science
+# BS Data Science Coursework
 
 This repository contains laboratory work, assignments, exercises, and academic projects completed during my Bachelor of Science in Data Science degree.
 
@@ -28,7 +28,7 @@ Each course is organized in its own folder and may contain:
 ## Repository Structure
 
 ```text
-BS-Coursework/
+BS-Course-Work/
 │
 ├── Programming-Fundamentals-Lab/
 │   ├── PF-Lab-01/
