@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int number, unit, ten, hundred, thousand, ten_thousand, hundred_thousand, sum, product, a, b, c, d, e, f;
+	cin>>number;
+	if(number>=100000 && number<=999999)
+	{
+	    
+	    f=number%10;
+	    hundred_thousand=number/10;
+	    e=hundred_thousand%10;
+	    ten_thousand=hundred_thousand/10;
+	    d=ten_thousand%10;
+	    thousand=ten_thousand/10;
+	    c=thousand%10;
+	    hundred=thousand/10;
+	    b=hundred%10;
+	    ten=hundred/10;
+	    a=ten%10;
+	    unit=ten/10;
+	    sum=f+e+d+c+b+a;
+	    cout<<"The sum of numbers is = "<<sum<<endl;
+	    product=f*e*d*c*b*a;
+	    cout<<"The product of the numbers is = "<<product<<endl;
+	}
+	else
+	{
+	    if(number<100000)
+	    {
+	    cout<<"The number is too small"<<endl;
+	    }
+	    else
+	    {
+	        cout<<"The number is too Large"<<endl;
+	    }
+	}
+	
+cout<<"The End"<<endl;
+return 0;
+}

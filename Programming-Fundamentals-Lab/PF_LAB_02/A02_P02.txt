@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int x,y;
+	int ltx,lty,rtx,rty;
+	cout<<"Enter X-coordinate point P: "<<endl;
+	cin>>x;
+	cout<<"Enter Y-coordinate point P: "<<endl;
+	cin>>y;
+	cout<<"Enter X-coordinate of left top corner P: "<<endl;
+	cin>>ltx;
+	cout<<"Enter Y-coordinate of left top corner P: "<<endl;
+	cin>>lty;
+	cout<<"Enter X-coordinate of right bottom corner P: "<<endl;
+	cin>>rtx;
+	cout<<"Enter Y-coordinate of right bottom corner P: "<<endl;
+	cin>>rty;
+	if(x>=ltx && x<=rtx && y<=lty && y>=rty)
+	{
+	    cout<<"P lies inside the region"<<endl;
+	}
+	else
+	{
+	    cout<<"P lies outside the region"<<endl;
+	}
+cout<<"The End"<<endl;
+return 0;
+}

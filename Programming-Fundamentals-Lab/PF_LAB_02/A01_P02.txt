@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	double a,b,c;
+	cin>>a>>b>>c;
+	if(a<=0||b<=0||c<=0)
+	{
+			cout<<"All Angles must be positive"<<endl;
+	}
+	else 
+	{
+		 if (a+b+c==180)
+		 {
+			 cout<<"A Triangle can be created"<<endl;
+		 }
+		 else
+		 {
+			 cout<<"A Triangle cannot be created"<<endl;
+		 }
+	}	 
+cout<<"The End";
+return 0;
+}
