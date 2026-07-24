@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Predict House Price</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}" method="post">
+    	<input type="text" name="Pclass" placeholder="Enter Passanger Class" required="required" />
+        <input type="text" name="Sex" placeholder="Enter Gender" required="required" />
+		<input type="text" name="Age" placeholder="Enter Age" required="required" />
+		<input type="text" name="SibSp" placeholder="Enter SibSp" required="required" />
+        <input type="text" name="Parch" placeholder="Enter Parch" required="required" />
+		<input type="text" name="Fare" placeholder="Enter Fare" required="required" />
+        <input type="text" name="Embarked_C" placeholder="Enter Embarked_C" required="required" />
+		<input type="text" name="Embarked_Q" placeholder="Enter Embarked_Q" required="required" />
+		<input type="text" name="Embarked_S" placeholder="Enter Embarked_S" required="required" />
+		
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
