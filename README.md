@@ -1,4 +1,4 @@
-# BS Coursework
+# BS Coursework Data Science
 
 This repository contains laboratory work, assignments, exercises, and academic projects completed during my Bachelor of Science in Data Science degree.
 
@@ -70,8 +70,8 @@ This repository serves as an organized archive of my undergraduate laboratory wo
 
 ## Academic Context
 
-**Degree:** Bachelor of Science in Data Science
-**University:** National University of Computer and Emerging Sciences (FAST-NUCES)
+**Degree:** Bachelor of Science in Data Science\
+**University:** National University of Computer and Emerging Sciences (FAST-NUCES)\
 **Location:** Lahore, Pakistan
 
 ---
